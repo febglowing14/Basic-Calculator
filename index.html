@@ -11,11 +11,23 @@
     <h1>Calculator App</h1>
     <div id="contains">
         <label for="num1">Number 1:</label>
-        <input type="number" id="num1" value="8" onclick="input1()">
+        <input type="number" id="num1" value="8" onfocus="setActiveInput('num1')">
         <br>
         <label for="num2">Number 2:</label>
-        <input type="number" id="num2" value="2">
+        <input type="number" id="num2" value="2" onfocus="setActiveInput('num2')">
         <br><br>
+        <button onclick="zero()">0</button>
+        <button onclick="one()">1</button>
+        <button onclick="two()">2</button>
+        <button onclick="Three()">3</button>
+        <button onclick="Four()">4</button>
+        <button onclick="Five()">5</button>
+        <button onclick="Six()">6</button>
+        <button onclick="Seven()">7</button>
+        <button onclick="Eight()">8</button>
+        <button onclick="Nine()">9</button>
+        
+
         <button onclick="add()">"+"</button>
         <button onclick="subtract()">"-"</button>
         <button onclick="divide()">"/"</button>
